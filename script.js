@@ -38,9 +38,15 @@ form.addEventListener("submit", function (e) {
 
   //check if we reached max count
   if (count === maxCount) {
-    const waterCount = parseInt(document.getElementById("waterCount").textContent);
-    const zeroCount = parseInt(document.getElementById("zeroCount").textContent);
-    const powerCount = parseInt(document.getElementById("powerCount").textContent);
+    const waterCount = parseInt(
+      document.getElementById("waterCount").textContent,
+    );
+    const zeroCount = parseInt(
+      document.getElementById("zeroCount").textContent,
+    );
+    const powerCount = parseInt(
+      document.getElementById("powerCount").textContent,
+    );
 
     let maxTeam = "Team Water Wise";
     let maxTeamCount = waterCount;
